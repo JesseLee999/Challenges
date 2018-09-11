@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1>Coffee Shop Survey</h1>
+    <hr></hr>
+    <form action="#" method="post">
+      <table>
+        <tr>
+          <td>Name:</td>
+          <td><input type="text" name="name"/></td>
+        </tr>
+        <tr>
+          <td>Contact Details:</td>
+          <td><input type="text" name="Contact"/></td>
+        </tr>
+        <tr>
+          <td>Gender:</td>
+          <td><select name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+        </tr>
+        <tr>
+          <td>Date of Birth:</td>
+          <td><input type="date" name="DOB" id="DOB"/></td>
+        </tr>
+        <tr>
+          <td>Email Address:</td>
+          <td><input type="text" name="email"/></td>
+        <tr>
+          <td>Password:</td>
+          <td><input type="text" name="password"/></td>
+        </tr>
+        <tr>
+      </table>
+      </form>
+      <p>How often do you visit coffee shops?</p>
+      <textarea rows="2" cols="45"></textarea>
+      <p>What is your favorite coffee shop? Where is it located?</p>
+      <textarea rows="4" cols="45"></textarea>
+      <p>What do you typically order to drink?</p>
+      <textarea rows="2" cols="45"></textarea>
+      <table>
+        <b></b>
+      <td>Do you prefer large, national chain coffee shops or small, privately owned coffee shops?</td>
+      <td>
+        <input type="radio" value="Large National" name="coffee shops">Large National
+        <input type="radio" value="Small Private" name="coffee shops">Small Private
+      </td>
+      </table>
+      <b></b>
+      <p>Comments:</p>
+      <textarea rows="5" cols="45"></textarea>
+      <td><input type="reset"></td>
+      <td><input type="submit" value="Send Survey"></td>
+  </body>
+</html>
