@@ -5,21 +5,21 @@
     <title></title>
   </head>
   <body>
-    <h1 align="center"><strong>Registration Form</strong></h1>
+    <h1><strong>Registration Form</strong></h1>
     <hr></hr>
     <form action="#" method="post">
       <table>
         <tr>
           <td>User id:</td>
-          <td><input type="text" name="userid" required and must be length of 5-12/></td>
+          <td><input type="text" name="userid" pattern=".{5,12}" required title="5 to 12 characters"/></td>
         </tr>
         <tr>
           <td>Password:</td>
-          <td><input type="text" name="password" required and must be length of 7-12/></td>
+          <td><input type="text" name="psw" pattern=".{7,12}" required title="7 to 12 characters"/></td>
         </tr>
         <tr>
           <td>Name:</td>
-          <td><input type="text" name="name" required="7-12"/></td>
+          <td><input type="text" name="name" pattern="[A-Za-z]+" required oninvalid="this.setCustomValidity('Alphabates only')"/></td>
         </tr>
         <tr>
           <td>Address:</td>
@@ -27,15 +27,42 @@
         </tr>
         <tr>
           <td>Country:</td>
-          <td><select name="country">
-            <option value="1"></option>
-            <option value="Female">Female</option>
+          <td><select name="country" required>
+            <option value="">(Please select a country)</option>
+            <option value="1">AU</option>
+            <option value="2">DE</option>
+            <option value="3">JP</option>
+            <option value="4">NL</option>
+            <option value="5">RU</option>
+            <option value="6">ZA</option>
+            <option value="7">ES</option>
+            <option value="8">US</option>
           </select>
         </tr>
-
-
-
-
-
+        <tr>
+          <td>ZIP Code:</td>
+          <td><input type="text" name="zip" required/></td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td><input type="email" name="email" required/></td>
+        </tr>
+        <tr>
+          <td>Sex:</td>
+           <td><input type="radio" value="male" name="sex" required>Male</td>
+           <td><input type="radio" value="female" name="sex" required>Female</td>
+        </tr>
+        <tr>
+          <td>Language:</td>
+           <td><input type="radio" value="english" name="language" required>English
+           <td><input type="radio" value="non english" name="language" required>Non English
+        </tr>
+        <tr>
+          <td>About:</td>
+          <td><textarea rows="5" cols="45"></textarea></td>
+          <b></b>
+          <td><input type="submit" value="Submit"></td>
+        </tr>
+       </form>
   </body>
 </html>
