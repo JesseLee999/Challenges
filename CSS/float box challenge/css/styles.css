@@ -1,0 +1,52 @@
+/* first box start */
+#one {
+  background-color: red;
+}
+#one:hover {
+  background-color: #800000;
+}
+#one:active {
+  background-color: #FA8072;
+}
+/* first box end */
+/* second box start */
+#two {
+  background-color: blue;
+}
+#two:hover {
+  background-color: #111E6C;
+}
+#two:active {
+  background-color: #7EF9FF;
+}
+/* second box end */
+/* third box start */
+#three {
+  background-color: green;
+}
+#three:hover {
+  background-color: #0B6623;
+  width: 600px;
+}
+#three:active {
+  background-color: #98FB98;
+}
+/* third box end */
+/* last box start */
+#four {
+  background-color: yellow;
+}
+#four:hover {
+  background-color: #C49102;
+  width: 50px;
+}
+#four:active{
+  background-color: #EFFD5F;
+}
+/* last box end */
+.floatingbox {
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+  float: left;
+}

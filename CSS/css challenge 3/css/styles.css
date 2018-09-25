@@ -3,6 +3,7 @@
 
 * {
   box-sizing: border-box;
+
 }
 
 html {
@@ -11,7 +12,8 @@ html {
 
 body {
   margin: 0;
-  background: #ccc;
+  background: white;
+  background-image: radial-gradient(circle, white 5%, darkgrey 80%);
 }
 
 article {
@@ -19,6 +21,8 @@ article {
   height: 297mm;
   margin: 20px auto;
   position: relative;
+  border-top: 1mm solid grey;
+  border-bottom: 1mm solid grey;
 }
 
 address {
@@ -39,6 +43,30 @@ h1 {
   padding: 44px 0;
   color: white;
   text-shadow: 1px 1px 1px black;
+  background-image: url("../img/logo.png");
+  /* box-shadow: 30px 10px 11px grey; */
+  filter: drop-shadow(30px 10px 11px grey);
 }
 
 /* Write your CSS below here */
+
+.fixed-top {
+  background-image: url("../img/top-image.png");
+  background-attachment:scroll;
+  min-height: 400px;
+  background-position: center;
+  background-size: cover;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.fixed-bot {
+  background-image: url("../img/bottom-image.png");
+  background-attachment:scroll;
+  min-height: 400px;
+  background-position: center;
+  background-size: cover;
+  position: sticky;
+  bottom: 0;
+}

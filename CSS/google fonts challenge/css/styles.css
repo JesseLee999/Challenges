@@ -1,0 +1,11 @@
+@Import url("https://fonts.googleapis.com/css?family=Dosis");
+
+.one {
+  font-family: 'Dosis', Tahoma, sans-serif, Arial, sans-serif;
+  font-size: 20px;
+}
+
+.two {
+  font-family: 'Oswald', Tahoma, sans-serif, Arial, sans-serif;
+  font-size: 20px;
+}
